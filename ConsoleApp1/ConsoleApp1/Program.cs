@@ -102,10 +102,10 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             int i;
-            Console.Write("Enter A Number : ");
+            Console.Write("Enter A Number :.. ");
             int num = int.Parse(Console.ReadLine());
             bool isPrime = true;
-            for (i = 2; i < Math.Sqrt(num); i++)
+            for (i = 2; i <= Math.Sqrt(num); i++)
             {
                 if (num % i == 0)
                 {
@@ -116,11 +116,11 @@ namespace ConsoleApp1
 
             if (isPrime)
             {
-                Console.WriteLine($"{num} is prime");
+                Console.WriteLine($"{num} is prime !");
             }
             else
             {
-                Console.WriteLine($"{num} is not prime");
+                Console.WriteLine($"{num} is not prime !");
             }
 
         }
