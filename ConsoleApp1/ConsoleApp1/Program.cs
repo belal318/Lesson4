@@ -1,4 +1,4 @@
-﻿///=======================================Question1========================================
+﻿////===============================================Question1=======================================================
 //using System;
 //using System.Collections.Generic;
 //using System.Linq;
@@ -24,7 +24,7 @@
 //    }
 //}
 
-//////====================================Question2 =================================
+////===============================================Question2=======================================================
 //using System;
 //using System.Collections.Generic;
 //using System.Linq;
@@ -56,7 +56,7 @@
 //}
 
 
-////====================================Question3 =================================
+////===============================================Question3=======================================================
 //using System;
 //using System.Collections.Generic;
 //using System.Linq;
@@ -88,47 +88,44 @@
 //    }
 //}
 
-////====================================Question4 =================================
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+////===============================================Question4=======================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-//namespace ConsoleApp1
-//{
-//    class Program
-//    {
-//        static void Main(string[] args)
-//        {
-//            int i;
-//            Console.Write("enter a number : ");
-//            int num = int.Parse(Console.ReadLine());
-//            int numDiv2 = num / 2;
-//            int step = 2;
-//            bool isPrime = true;
-//            for (i = 0; step <= numDiv2; i++)
-//            {
-//                if (num % step == 0)
-//                {
-//                    isPrime = false;
-//                    break;
-//                }
-//                step++;
-//            }
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i;
+            Console.Write("Enter A Number : ");
+            int num = int.Parse(Console.ReadLine());
+            bool isPrime = true;
+            for (i = 2; i < Math.Sqrt(num); i++)
+            {
+                if (num % i == 0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            }
 
-//            if (isPrime)
-//            {
-//                Console.WriteLine(num + " is prime");
-//            }
-//            else
-//            {
-//                Console.WriteLine(num + " is not prime");
-//            }
+            if (isPrime)
+            {
+                Console.WriteLine($"{num} is prime");
+            }
+            else
+            {
+                Console.WriteLine($"{num} is not prime");
+            }
 
-//        }
-//    }
-//}
+        }
+    }
+}
 
 
 
