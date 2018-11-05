@@ -74,11 +74,10 @@
 //            int counter = 0;
 //            Console.Write("enter a number : ");
 //            string input = Console.ReadLine();
-//            for (i = 0; input!="done"; i++)
+//            for (; input!="done";counter++)
 //            {
 //                int num = int.Parse(input);
 //                sum += num;
-//                counter++;
 //                Console.Write("enter a number : ");
 //                input = Console.ReadLine();
 //            }
